@@ -1,0 +1,11 @@
+@startuml
+actor User
+participant "PatientPredictionView" as PPV
+participant "Patient Model" as PM
+
+User -> PPV: Create Patient Prediction Request
+PPV -> PM: Create New Patient Prediction
+PM -> PM: Save Prediction to Database
+PM --> PPV: Prediction Created
+PPV --> User: Response with Prediction Details
+@enduml
