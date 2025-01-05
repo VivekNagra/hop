@@ -6,13 +6,13 @@ class Patient(models.Model):
         MEDIUM = 'medium', 'Medium'
         LOW = 'low', 'Low'
     name = models.CharField(max_length=255)
-    age = models.IntegerField()  # Keep age as IntegerField
+    age = models.IntegerField()  
     gender = models.CharField(max_length=10)
-    glucose = models.FloatField()  # Changed to FloatField for decimals
-    blood_pressure = models.FloatField()  # Changed to FloatField
-    skin_thickness = models.FloatField()  # Changed to FloatField
-    insulin = models.FloatField()  # Changed to FloatField
-    bmi = models.FloatField()  # Keeping bmi as FloatField
+    glucose = models.FloatField()  
+    blood_pressure = models.FloatField()  
+    skin_thickness = models.FloatField()  
+    insulin = models.FloatField() 
+    bmi = models.FloatField()  
     created = models.DateTimeField(auto_now_add=True)
     risk_factor = models.CharField(
         max_length=10,

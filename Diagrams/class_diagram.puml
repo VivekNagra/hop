@@ -1,0 +1,55 @@
+@startuml
+class Patient {
+  CharField name
+  IntegerField age
+  CharField gender
+  FloatField glucose
+  FloatField blood_pressure
+  FloatField skin_thickness
+  FloatField insulin
+  FloatField bmi
+  DateTimeField created
+  CharField risk_factor
+  __str__()
+}
+
+class User {
+  ...
+}
+
+class PatientPredictionView {
+  create()
+}
+
+class PatientCreateView {
+  (inherited methods)
+}
+
+class PatientListView {
+  (inherited methods)
+}
+
+class PatientDetailView {
+  (inherited methods)
+}
+
+class PatientUpdateView {
+  (inherited methods)
+}
+
+class PatientDeleteView {
+  (inherited methods)
+}
+
+class PatientStatisticsAPIView {
+  (inherited methods)
+}
+
+class RegisterUserView {
+  create()
+}
+
+class CustomTokenObtainPairView {
+  post()
+}
+@enduml
